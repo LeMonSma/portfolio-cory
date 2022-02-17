@@ -1,1 +1,37 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
 
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+#About-Me {
+  display: flex;
+  flex-wrap: wrap;
+}
+h2 {
+}
+.me {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+}
+.me p {
+  display: flex;
+  flex-direction: row-reverse;
+}
