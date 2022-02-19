@@ -7,101 +7,120 @@
     <link rel="stylesheet" href="assets\style.css" />
   </head>
   <body>
+    <!-- header with navigation links -->
     <header>
       <h1>Cory Burris's Portfolio</h1>
       <nav>
         <ul>
           <li>
-            <a href="#About-Me">About Me</a>
+            <a href="#About-Me"><span class="border">About Me</span></a>
           </li>
           <li>
-            <a href="#My-Work">My Work</a>
+            <a href="#My-Work"> <span class="border">My Work</span></a>
           </li>
           <li>
-            <a href="#Contact-Me">Contact Me</a>
+            <a href="#Contact-Me"><span class="border"> Contact Me </span> </a>
           </li>
         </ul>
       </nav>
     </header>
-    <div class="parent">
-      <section class="hero"></section>
 
-      <section id="About-Me">
-        <article class="me">
-          <div class="flex-row">
-            <h2>About Me</h2>
-          </div>
-          <div class="flex-row profile">
-            <p style="font-size: 200px" class="avatar">&#128119;</p>
-          </div>
+    <section id="About-Me" class="flex back-ground-img">
+      <div class="me">
+        <h2>About Me</h2>
+      </div>
+      <div class="me flex-row">
+        <p style="font-size: 200px" class="avatar">&#128119;</p>
+      </div>
 
-          <div class="flex-row">
-            <p>
-              Hello, my name is Cory. This is my first portofolio page, and it
-              was created by yours truly. I am currently working as a handy man
-              and am looking to get into software development. My favorite
-              things to do all involve being outside, Well except for gaming but
-              I love, Hiking, Boating, Snowboarding, Sports, and Gaming.
-            </p>
-          </div>
-        </article>
-      </section>
+      <div class="me flex-row flex-grow">
+        <p>
+          Hello, my name is Cory. This is my first portofolio page, and it was
+          created by yours truly. I am currently working as a handy man and am
+          looking to get into software development. My favorite things to do all
+          involve being outside, Well except for gaming but I love, Hiking,
+          Boating, Snowboarding, Sports, and Gaming.
+        </p>
+      </div>
+    </section>
 
-      <main>
-        <section id="My-Work">
-          <article class="my-works">
-            <div class="flex-row">
-              <h2>My Work</h2>
-            </div>
+    <section id="My-Work" class="two-columns">
+      <div class="col-title">
+        <h2>My Work</h2>
+      </div>
 
-            <div class="wrap">
-              <div class="works-one">
-                <a href="https://lemonsma.github.io/run-buddy/" target="blank"
-                  ><img
-                    src="assets\images\my-work-1.png"
-                    alt="a screenshot of the website"
-                  />
-                </a>
-              </div>
-              <div class="works">
-                <a href="https://www.google.com/" target="blank">
-                  <img src="assets\images\my-work-2.png" alt="" />
-                </a>
-              </div>
-              <div class="works">
-                <a href="https://www.hockeymonkey.com/" target="blank">
-                  <img src="assets\images\my-work-3.png" alt="" />
-                </a>
-              </div>
-              <div class="works">
-                <a href="https://www.espn.com/">
-                  <img src="assets\images\my-work-4.png" alt="" />
-                </a>
-              </div>
-
-              <div class="works">
-                <a href="https://www.adidas.com/">
-                  <img src="assets\images\my-work-5.png" alt="" />
-                </a>
-              </div>
-            </div>
-          </article>
-        </section>
-      </main>
-
-      <section id="Contact-Me">
-        <h2>Contact Me</h2>
-        <div>
-          <ul>
-            <li>281-330-8004</li>
-            <li>burrisc24@gmail.com</li>
-            <a href="https://github.com/LeMonSma/portfolio-cory">
-              <li>Github</li>
-            </a>
-          </ul>
+      <div class="col-content">
+        <div class="col-item col-item-full">
+          <a href="https://lemonsma.github.io/run-buddy/" target="_blank">
+            <span>
+              <p>item 1</p>
+            </span>
+          </a>
         </div>
-      </section>
-    </div>
+
+        <div class="col-item">
+          <a href="https://lemonsma.github.io/run-buddy/" target="_blank">
+            <span>
+              <p>item 2</p>
+            </span>
+          </a>
+        </div>
+
+        <div class="col-item">
+          <a href="https://lemonsma.github.io/run-buddy/" target="_blank">
+            <span>
+              <p>item 3</p>
+            </span>
+          </a>
+        </div>
+
+        <!-- <div class="works">
+          <a href="https://www.google.com/" target="blank">
+            <div class="works2 img-style">
+              <span>
+                <h3>GOOGLE</h3>
+              </span>
+            </div>
+          </a>
+        </div> -->
+
+        <!-- <div class="works">
+          <a href="https://www.hockeymonkey.com/" target="blank">
+            <div class="works3 img-style">
+              <h3>Hockey</h3>
+            </div>
+          </a>
+          <div class="works">
+            <a href="https://www.espn.com/" target="blank">
+              <div class="works4 img-style">
+                <h3>ESPN</h3>
+              </div>
+            </a>
+          </div>
+          <div class="works">
+            <a href="https://www.adidas.com/">
+              <div class="works5 img-style">
+                <h3>Adidas</h3>
+              </div>
+            </a>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <section id="Contact-Me">
+      <div class="flex"><h2>Contact Me</h2></div>
+
+      <div class="flex">
+        <ul>
+          <li>599-987-2345</li>
+          <li>burrisc24@gmail.com</li>
+          <a href="https://github.com/LeMonSma/portfolio-cory">
+            <li>GitHub</li>
+          </a>
+        </ul>
+      </div>
+    </section>
   </body>
 </html>
 
