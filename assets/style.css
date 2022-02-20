@@ -7,8 +7,6 @@
   padding: 0px;
   box-sizing: border-box;
 }
-section {
-}
 
 body {
   background: url("../assets/images/background2.jpg");
@@ -136,6 +134,11 @@ h2 {
   position: absolute;
   bottom: 1em;
   left: 1em;
+  text-decoration: none;
+  color: black;
+}
+.col-item > a > span:hover {
+  background-color: rgba(255, 255, 0, 0.5);
 }
 
 .flex-grow {
@@ -182,8 +185,9 @@ h2 {
 }
 
 .img-style {
-  background-size: cover;
-  background-attachment: relative;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .contact-flex {
@@ -210,16 +214,37 @@ h2 {
   font-weight: lighter;
   font-size: 1.55vw;
   color: var(--primary-color);
-
   justify-content: space-between;
 }
 
-@media screen and (max-width: 980px) {
+.contact-content a {
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+a:hover {
+  background-color: none;
+  color: rgba(255, 255, 0, 0.5);
+  border-bottom: 2px solid yellow;
+}
+
+.two-columns a:hover {
+  background-image: none;
+  background-color: rgba(255, 255, 0, 1);
+  border: 8px solid yellow;
+}
+
+@media screen and (max-width: 1080px) {
   body {
     background-image: url("../assets/images/background.jpg");
     background-color: black;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
   }
   .back-ground-img {
     background-image: none;
@@ -227,7 +252,7 @@ h2 {
   header {
     padding-bottom: 0;
     justify-content: center;
-    position: relative;
+    position: sticky;
     padding-left: 0;
     padding-right: 0;
   }
@@ -247,21 +272,19 @@ h2 {
     font-size: 15px;
   }
 
-  
+  .me-title {
+    border: none;
+    flex: 100%;
+    text-align: center;
+    border-bottom: 6px solid beige;
+  }
 
-.me-title {
-  border: none;
-  flex: 100%;
-  text-align: center;
-  border-bottom: 6px solid beige;
-}
-
-.me-content {
-  flex-direction: column;
-  margin: 0 auto 0 auto;
-  padding: 0;
-}
- .two-columns {
+  .me-content {
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    padding: 0;
+  }
+  .two-columns {
     max-width: 100%;
     flex-direction: column;
     margin: 1em;
@@ -278,7 +301,7 @@ h2 {
     border-bottom: 6px solid beige;
   }
 
-  .contact-flex{
+  .contact-flex {
     flex-direction: column;
   }
 
@@ -290,6 +313,41 @@ h2 {
   }
 
   .contact-content ul {
-    font-size:20px;
-    justify-content: space-between;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: 768px) {
+    header h1 {
+      font-size: 20px;
     }
+
+    .contact-content ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-content ul a {
+      font-size: 15px;
+      visibility: hidden;
+      flex: 1;
+      align-items: center;
+    }
+
+    .small-screen-1::after {
+      visibility: visible;
+      content: "PHONE";
+    }
+
+    .small-screen-2::after {
+      visibility: visible;
+      content: "EMAIL";
+    }
+
+    .small-screen-3::after {
+      visibility: visible;
+      content: "GIT";
+    }
+  }
+}
