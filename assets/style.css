@@ -150,7 +150,7 @@ h2 {
 .col-item > a > span:hover {
   background-color: rgba(255, 255, 0, 0.5);
 }
- 
+
 .flex-grow {
   flex: 1;
 }
@@ -222,7 +222,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  color: var(--primary-color) ;
+  color: var(--primary-color);
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
@@ -352,7 +352,7 @@ a:hover {
       visibility: hidden;
       align-items: center;
     }
-/*classes created to change text in contact me for small screens*/
+    /*classes created to change text in contact me for small screens*/
     .small-screen-1::after {
       visibility: visible;
       content: "PHONE";
@@ -367,30 +367,30 @@ a:hover {
       visibility: visible;
       content: "GIT";
     }
-  
-}
-@media screen and (max-width: 580px) {
-  header {
-    max-width: 100%;
   }
-}
-.flex-row {
-  padding: 0;
-}
+  @media screen and (max-width: 580px) {
+    header {
+      max-width: 100%;
+    }
+  }
+  .flex-row {
+    padding: 0;
+  }
 
-.col-item {
-  flex: 0 0 75%;
-}
+  .col-item {
+    flex: 0 0 75%;
+  }
 
-.col-item > a {
-  padding: 2em;
-  height: 200px;
-}
+  .col-item > a {
+    padding: 2em;
+    height: 200px;
+  }
 
-.col-title {
-  justify-content: center;
-}
+  .col-title {
+    justify-content: center;
+  }
 
-.col-content span {
-  background-color: beige;
+  .col-content span {
+    background-color: beige;
+  }
 }
