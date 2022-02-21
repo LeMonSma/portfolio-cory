@@ -7,7 +7,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
+/*background image for whole website*/
 body {
   background: url("../assets/images/background2.jpg");
   background-size: cover;
@@ -18,7 +18,7 @@ section {
   padding: 0;
   margin: 0;
 }
-
+/* parent container for flex box making both children appear in the same row*/
 header {
   padding: 20px 35px;
   display: flex;
@@ -31,10 +31,10 @@ header {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  border-bottom: 2px solid beige;
+  border-bottom: 2px solid var(--primary-color);
   z-index: 9999;
 }
-
+/* taking away text decoration from nav links*/
 header a {
   text-decoration: none;
 }
@@ -44,7 +44,7 @@ header nav {
 }
 header h1 {
   font-size: 3.5vw;
-  color: beige;
+  color: var(--primary-color);
   margin: 0;
   align-content: flex-start;
   padding: 10px;
@@ -68,8 +68,9 @@ header nav ul li a {
 
 h2 {
   font-size: 40px;
-  color: beige;
+  color: var(--primary-color);
 }
+/*flexbox parent class for about me section*/
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -77,15 +78,15 @@ h2 {
   padding: 0 10%;
   align-content: flex-start;
 }
-
+/*styling for title for about me section*/
 .me-title {
   flex: 0 0 25%;
-  border-right: 6px solid beige;
+  border-right: 6px solid var(--primary-color);
   text-align: right;
   padding: 10px 10px 0 0;
   margin: 1em;
 }
-
+/*child container of flex-row ; parent container for items section*/
 .me-content {
   flex: 0 0 70%;
   display: flex;
@@ -97,21 +98,21 @@ h2 {
   flex: 0 0 40%;
   padding: 2em;
 }
-
+/*parent container making the two children appear in columns*/
 .two-columns {
   width: 100%;
   display: flex;
   padding: 0 10%;
 }
-
+/* child one*/
 .col-title {
   flex: 0 0 25%;
-  border-right: 6px solid beige;
+  border-right: 6px solid var(--primary-color);
   text-align: right;
   padding: 10px 10px 0 0;
   margin: 1em;
 }
-
+/*child two*/
 .col-content {
   flex: 0 0 80%;
   display: flex;
@@ -120,19 +121,19 @@ h2 {
   align-content: center;
   padding: 1em;
 }
-
+/*class given to make other works appear in 2x2*/
 .col-item {
   flex: 0 0 40%;
   margin: 1em;
 }
-
+/* class given to first work to allow it to take up a whole space*/
 .col-item-full {
   flex: 1 100%;
 }
 
 .col-item > a {
   display: block;
-  border: 3px solid peru;
+  border: 3px solid var(--secondary-color);
   height: 300px;
   position: relative;
 }
@@ -144,14 +145,16 @@ h2 {
   text-decoration: none;
   color: black;
 }
+
+/* */
 .col-item > a > span:hover {
   background-color: rgba(255, 255, 0, 0.5);
 }
-
+ 
 .flex-grow {
   flex: 1;
 }
-
+/*gives background image to about me section*/
 .back-ground-img {
   background-image: url("../assets/images/background.jpg");
   width: 100%;
@@ -165,12 +168,12 @@ h2 {
 }
 .me-item p {
   font-size: 28px;
-  color: beige;
+  color: var(--primary-color);
   justify-content: space-around;
   align-items: flex-start;
   text-align: center;
 }
-
+/*images for my works section*/
 .works1 {
   background-image: url("../assets/images/my-work-1.png");
 }
@@ -190,25 +193,28 @@ h2 {
 .works5 {
   background-image: url("../assets/images/my-work-5.png");
 }
-
+/* styling of background images in my works*/
 .img-style {
   background-origin: content-box;
   background-repeat: no-repeat;
   background-size: contain;
 }
-
+/* parent container for contact section*/
 .contact-flex {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
+
+/*child one*/
 .contact-title {
   flex: 0 0 25%;
-  border-right: 6px solid beige;
+  border-right: 6px solid var(--primary-color);
   padding: 10px 10px 0 0;
   margin: 1em;
 }
 
+/*child two*/
 .contact-content {
   flex: 0 0 58%;
 }
@@ -216,7 +222,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  color: beige;
+  color: var(--primary-color) ;
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
@@ -232,7 +238,7 @@ h2 {
   color: var(--primary-color);
   margin: 0;
 }
-
+/*psuedo classes for links to change when selected*/
 a:hover {
   background-color: none;
   color: rgba(255, 255, 0, 0.5);
@@ -346,7 +352,7 @@ a:hover {
       visibility: hidden;
       align-items: center;
     }
-
+/*classes created to change text in contact me for small screens*/
     .small-screen-1::after {
       visibility: visible;
       content: "PHONE";
